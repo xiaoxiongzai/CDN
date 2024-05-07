@@ -1,0 +1,75 @@
+本地创建ssh密钥：ssh-keygen -t rsa -b 4096 -C "lyd2398290381@outlook.com"
+查看密钥：cat ~/.ssh/id_rsa.pub
+git仓库资源：git clone git@github.com:xiaoxiongzai/CDN.git
+添加资源到暂存区：git add .     （提交所有资源）
+提交资源：git commit -m '提交资源备注消息'
+推送远程仓库：git push <branch_name>
+                                      <branch_name>分支名称 
+
+
+以下是一些常用的 GitHub 操作指令：
+
+1. **克隆仓库**：
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. **添加文件到暂存区**：
+   ```bash
+   git add <file_name>
+   ```
+
+3. **提交文件到本地仓库**：
+   ```bash
+   git commit -m "commit_message"
+   ```
+
+4. **推送本地提交到远程仓库**：
+   ```bash
+   git push origin <branch_name>
+   ```
+
+5. **更新本地仓库到最新版本**：
+   ```bash
+   git pull origin <branch_name>
+   ```
+
+6. **查看本地修改的文件状态**：
+   ```bash
+   git status
+   ```
+
+7. **查看提交历史**：
+   ```bash
+   git log
+   ```
+
+8. **创建新的分支**：
+   ```bash
+   git checkout -b <new_branch_name>
+   ```
+
+9. **切换分支**：
+   ```bash
+   git checkout <branch_name>
+   ```
+
+10. **合并分支**：
+    ```bash
+    git merge <branch_name>
+    ```
+
+11. **删除本地分支**：
+    ```bash
+    git branch -d <branch_name>
+    ```
+
+12. **删除远程分支**：
+    ```bash
+    git push origin --delete <branch_name>
+    ```
+
+13. **配置用户名和邮箱**：
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your_email@example.com"
